@@ -19,15 +19,13 @@ cron/squeeze
 dash/squeeze
 ddrescue/squeeze
 debconf/squeeze
-debconf-i18n/squeeze
+debconf-english/squeeze
 debian-archive-keyring/squeeze
 debianutils/squeeze
 debootstrap/squeeze
 deborphan/squeeze
 dialog/squeeze
 diffutils/squeeze
-discover/squeeze
-discover-data/squeeze
 dmsetup/squeeze
 dpkg/squeeze
 e2fslibs/squeeze
@@ -49,7 +47,6 @@ groff-base/squeeze
 grub-common/squeeze
 grub-pc/squeeze
 gzip/squeeze
-heirloom-mailx/squeeze
 hostname/squeeze
 ifupdown/squeeze
 info/squeeze
@@ -82,7 +79,6 @@ libcurl3-gnutls/squeeze
 libdb4.7/squeeze
 libdb4.8/squeeze
 libdevmapper1.02.1/squeeze
-libdiscover2/squeeze
 libedit2/squeeze
 liberror-perl/squeeze
 libexpat1/squeeze
@@ -127,10 +123,7 @@ libss2/squeeze
 libssl0.9.8/squeeze
 libstdc++6/squeeze
 libtasn1-3/squeeze
-libtext-charwidth-perl/squeeze
-libtext-iconv-perl/squeeze
 libtext-template-perl/squeeze
-libtext-wrapi18n-perl/squeeze
 libudev0/squeeze
 libusb-0.1-4/squeeze
 libuuid-perl/squeeze
