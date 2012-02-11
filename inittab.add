@@ -1,0 +1,3 @@
+# for intel amt: 
+#S1:2345:respawn:/sbin/agetty ttyS1 115200 vt100-nav
+
