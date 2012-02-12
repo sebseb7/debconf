@@ -9,6 +9,7 @@ bridge-utils/squeeze
 bsdmainutils/squeeze
 bsdutils/squeeze
 busybox/squeeze
+bzip2/squeeze
 ca-certificates/squeeze
 console-setup/squeeze
 console-terminus/squeeze
@@ -47,6 +48,8 @@ groff-base/squeeze
 grub-common/squeeze
 grub-pc/squeeze
 gzip/squeeze
+heirloom-mailx/squeeze
+hexedit/squeeze
 hostname/squeeze
 ifupdown/squeeze
 info/squeeze
@@ -72,6 +75,7 @@ libc-bin/squeeze
 libc6/squeeze
 libc6-i686/squeeze
 libc6-xen/squeeze
+libcap-ng0/squeeze
 libcomerr2/squeeze
 libconfig-inifiles-perl/squeeze
 libconsole/squeeze
@@ -117,6 +121,7 @@ libreadline6/squeeze
 libsasl2-2/squeeze
 libselinux1/squeeze
 libsepol1/squeeze
+libsgutils2-2/squeeze
 libslang2/squeeze
 libsqlite3-0/squeeze
 libss2/squeeze
@@ -136,6 +141,7 @@ linux-image-3.2.0-0.bpo.1-686-pae/squeeze-backports
 login/squeeze
 logrotate/squeeze
 lsb-base/squeeze
+lsof/squeeze
 lvm2/squeeze
 man-db/squeeze
 manpages/squeeze
@@ -173,10 +179,14 @@ python2.6/squeeze
 python2.6-minimal/squeeze
 readline-common/squeeze
 rsyslog/squeeze
+screen/squeeze
 sed/squeeze
 sensible-utils/squeeze
+sg3-utils/squeeze
 shared-mime-info/squeeze
+smartmontools/squeeze
 ssh/squeeze
+sysstat/squeeze
 sysv-rc/squeeze
 sysvinit/squeeze
 sysvinit-utils/squeeze
