@@ -51,6 +51,7 @@ gzip/squeeze
 heirloom-mailx/squeeze
 hexedit/squeeze
 hostname/squeeze
+htop/squeeze
 ifupdown/squeeze
 info/squeeze
 initramfs-tools/squeeze-backports
@@ -85,6 +86,7 @@ libdb4.8/squeeze
 libdevmapper1.02.1/squeeze
 libedit2/squeeze
 liberror-perl/squeeze
+libevent-1.4-2/squeeze
 libexpat1/squeeze
 libfile-slurp-perl/squeeze
 libfreetype6/squeeze
@@ -191,6 +193,7 @@ sysv-rc/squeeze
 sysvinit/squeeze
 sysvinit-utils/squeeze
 tar/squeeze
+tmux/squeeze
 traceroute/squeeze
 tzdata/squeeze
 ucf/squeeze
