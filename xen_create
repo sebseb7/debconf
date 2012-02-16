@@ -1,0 +1,16 @@
+xen-create-image \
+--fs=ext4 \
+--memory=256M \
+--passwd \
+--size=2G \
+--swap=512M \
+--arch=i386 \
+--dist=stable \
+--ip=10.0.0.1 \
+--netmask=255.255.255.0 \
+--nameserver=8.8.8.8 \
+--gateway=10.0.0.2 \
+--dir=/opt/xen/ \
+--hostname=test1.exse.net \
+
+
