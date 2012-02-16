@@ -48,7 +48,6 @@ groff-base/squeeze
 grub-common/squeeze
 grub-pc/squeeze
 gzip/squeeze
-heirloom-mailx/squeeze
 hexedit/squeeze
 hostname/squeeze
 htop/squeeze
@@ -193,7 +192,7 @@ sysv-rc/squeeze
 sysvinit/squeeze
 sysvinit-utils/squeeze
 tar/squeeze
-tmux/squeeze
+tmux/squeeze-backports
 traceroute/squeeze
 tzdata/squeeze
 ucf/squeeze
