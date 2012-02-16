@@ -17,6 +17,8 @@
 # alias cp='cp -i'
 # alias mv='mv -i'
 
+
+ [[ $- != *i* ]] && return
 # TMUX
 if which tmux 2>&1 >/dev/null; then
 	if test -z ${TMUX}; then
