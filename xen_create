@@ -1,7 +1,7 @@
 xen-create-image \
 --fs=ext4 \
 --nohosts \
---memory=256M \
+--memory=256 \
 --passwd \
 --size=2G \
 --swap=512M \
@@ -11,7 +11,7 @@ xen-create-image \
 --netmask=255.255.255.0 \
 --nameserver="8.8.8.8 8.8.4.4"\
 --gateway=172.22.99.4 \
---dir=/opt/xen/ \
+--dir=/opt/xen \
 --hostname=che.exse.net \
 
 
