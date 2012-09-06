@@ -1,4 +1,2 @@
-deb http://backports.debian.org/debian-backports squeeze-backports main
-deb http://ftp.de.debian.org/debian/ squeeze main
-deb http://security.debian.org/ squeeze/updates main
-deb http://ftp.de.debian.org/debian/ squeeze-updates main
+deb http://ftp.de.debian.org/debian/ wheezy main
+deb http://security.debian.org/ wheezy/updates main

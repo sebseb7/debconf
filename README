@@ -1,1 +1,3 @@
 some files I use to configure debian systems
+
+dpkg-divert --divert /etc/grub.d/08_linux_xen --rename /etc/grub.d/20_linux_xen

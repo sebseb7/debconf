@@ -57,7 +57,7 @@
 #   (xen-api-server ((unix)))
 
 
-#(xend-http-server no)
+#(xend-http-server yes)
 #(xend-unix-server no)
 #(xend-tcp-xmlrpc-server no)
 #(xend-unix-xmlrpc-server yes)
@@ -109,6 +109,8 @@
 # Address xend should listen on for relocation-socket connections, if
 # xend-relocation-server is set.
 # Meaning and default as for xend-address above.
+# Also, interface name is allowed (e.g. eth0) there to get the
+# relocation address to be bound on.
 #(xend-relocation-address '')
 
 # The hosts allowed to talk to the relocation port.  If this is empty (the
@@ -141,15 +143,29 @@
 #
 # use
 #
-(network-script network-bridge)
+#(network-script network-bridge)
 #
 # Your default ethernet device is used as the outgoing interface, by default. 
 # To use a different one (e.g. eth1) use
 #
-# (network-script 'network-bridge netdev=eth1')
+(network-script 'network-bridge netdev=eth0')
 #
-# The bridge is named xenbr0, by default.  To rename the bridge, use
+# The bridge is named eth0, by default (yes, really!)
 #
+
+# It is normally much better to create the bridge yourself in
+# /etc/network/interfaces.  network-bridge start does nothing if you
+# already have a bridge, and network-bridge stop does nothing if the
+# default bridge name (normally eth0) is not a bridge.  See
+# bridge-utils-interfaces(5) for full information on the syntax in
+# /etc/network/interfaces, but you probably want something like this:
+#    iface xenbr0 inet static
+#        address [etc]
+#        netmask [etc]
+#        [etc]
+#        bridge_ports eth0
+#
+# To have network-bridge create a differently-named bridge, use:
 # (network-script 'network-bridge bridge=<name>')
 #
 # It is possible to use the network-bridge script in more complicated
@@ -169,7 +185,8 @@
 # configuring a new vif, but a value specified here would act as a default.
 #
 # If you are using only one bridge, the vif-bridge script will discover that,
-# so there is no need to specify it explicitly.
+# so there is no need to specify it explicitly.  The default is to use
+# the bridge which is listed first in the output from brctl.
 #
 (vif-script vif-bridge)
 
@@ -279,3 +296,11 @@
 # we have to realize this may incur security issue and we can't make sure the
 # device assignment could really work properly even after we do this.
 #(pci-passthrough-strict-check yes)
+
+# If we have a very big scsi device configuration, start of xend is slow,
+# because xend scans all the device paths to build its internal PSCSI device
+# list.  If we need only a few devices for assigning to a guest, we can reduce
+# the scan to this device. Set list list of device paths in same syntax like in
+# command lsscsi, e.g. ('16:0:0:0' '15:0') 
+# (pscsi-device-mask ('*'))
+
